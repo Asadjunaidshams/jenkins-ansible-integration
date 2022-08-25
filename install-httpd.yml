@@ -1,8 +1,7 @@
 --- 
 - 
-  hosts: "test server"
-  name: "server details"
-  remote_user: ansadmin
+  hosts: web-server
+  name: server details
   tasks: 
     - 
       name: "remove httpd"
