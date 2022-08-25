@@ -1,0 +1,16 @@
+--- 
+- 
+  hosts: "test server"
+  name: "server details"
+  remote_user: ansadmin
+  tasks: 
+    - 
+      name: "remove httpd"
+      yum: 
+        name: httpd
+        state: absent
+    - 
+      name: "install httpd server"
+      service: 
+        name: httpd
+        state: present
